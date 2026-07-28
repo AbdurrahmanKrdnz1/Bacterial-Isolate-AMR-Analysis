@@ -1,0 +1,6 @@
+data/*.fastq.gz
+venv/
+kraken2_db/
+.ipynb_checkpoints/
+__pycache__/
+results/kraken2_output.txt
