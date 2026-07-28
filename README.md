@@ -82,3 +82,11 @@ All results are written to the `results/` folder. Tool and database versions use
 ## Report
 
 The full findings report, including the note for the clinical team, methodology is in [`findings.md`](findings.md).
+
+## Note on Excluded Files
+
+Some files are not included in this repository because of their size:
+
+- `data/unknown_isolate.fastq.gz` (raw input data, 439 MB): download from the link provided in the assessment and place it in the `data/` folder before running the pipeline.
+- `kraken2_db/` (Kraken2 Standard-8 database, ~14 GB): this is downloaded automatically as part of running `code/shell_scripts/02_kraken2_classification.sh`. See the comments inside that script for the download command.
+- `results/kraken2_output.txt` (123 MB): this is the per-read Kraken2 classification output. It exceeds GitHub's 100 MB file size limit. The summary file `results/kraken2_report.txt`, which contains all the data used in this report, is included.
